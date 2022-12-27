@@ -10,6 +10,6 @@ services:
       - "9060:9060/tcp"
       - "9080:9080/tcp"
       - "7777:7777/tcp"
-    #networks:
-      #- opalus-net
+    networks:
+      - host
     restart: on-failure
