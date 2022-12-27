@@ -1,0 +1,15 @@
+version: '2.4'
+
+services:
+  ws-local:
+    image: bennu/websphere-traditional:8.5.5.14-profile
+    environment:
+      ServerEnvironment: Test
+    ports:
+      - "9043:9043/tcp"
+      - "9060:9060/tcp"
+      - "9080:9080/tcp"
+      - "7777:7777/tcp"
+    #networks:
+      #- opalus-net
+    restart: on-failure
