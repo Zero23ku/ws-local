@@ -20,7 +20,7 @@ https://localhost:9043/ibm/console/login.do?action=secure
 ```
 docker exec <nombre del contenedor> cat /tmp/PASSWORD
 ```
-**Nota: Para obtener el nombre del contenedor, ejecutar el comando: **
+**Nota: Para obtener el nombre del contenedor, ejecutar el comando:**
 ```
 docker ps
 ```
